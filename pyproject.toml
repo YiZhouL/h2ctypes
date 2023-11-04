@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "h2ctypes"
+version = "0.1.0"
+description = "headers2ctypes"
+readme = "README.md"
+requires-python = ">= 3.8"
+dependencies = [
+    "clang"
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
